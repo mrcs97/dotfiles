@@ -1,0 +1,22 @@
+[general]
+import = [
+    #"~/.config/alacritty/themes/jellybeans.toml"
+    #"~/.config/alacritty/themes/ayu-dark.toml"
+    "~/.config/alacritty/themes/srcery.toml"
+    #"~/.config/alacritty/themes/noctis-default.toml"
+    #"~/.config/alacritty/themes/noctis-minimus.toml"
+]
+
+[font]
+normal = { family = "Mononoki Nerd Font Mono" }
+size = 12.0
+
+[scrolling]
+history = 10000
+multiplier = 5
+
+[mouse]
+hide_when_typing = true
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"

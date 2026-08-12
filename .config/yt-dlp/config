@@ -1,0 +1,10 @@
+# output location
+-o ~/Downloads/%(title)s.%(ext)s
+
+# best quality
+-f "bv*+ba/b"
+
+--merge-output-format mp4
+--embed-metadata
+--embed-thumbnail
+--no-overwrites
