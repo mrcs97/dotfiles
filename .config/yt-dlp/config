@@ -8,3 +8,6 @@
 --embed-metadata
 --embed-thumbnail
 --no-overwrites
+# Filenames
+--restrict-filenames
+--js-runtimes deno:~/.local/bin/deno
