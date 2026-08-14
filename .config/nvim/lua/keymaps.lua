@@ -10,12 +10,12 @@ vim.keymap.set("n", "<leader>x", ":bd<CR>") -- delete
 vim.keymap.set("n", "<leader>sv", "<cmd>vsplit<CR>") -- vertical split
 vim.keymap.set("n", "<leader>sh", "<cmd>split<CR>") -- horizontal split
 
-vim.keymap.set("n", "<C-h>", "<C-w>h") -- move to left window
-vim.keymap.set("n", "<C-l>", "<C-w>l") -- move to right window
-vim.keymap.set("n", "<C-j>", "<C-w>j") -- move to lower window
-vim.keymap.set("n", "<C-k>", "<C-w>k") -- move to upper window
+vim.keymap.set("n", "<C-a>", "<C-w>h") -- move to left window
+vim.keymap.set("n", "<C-d>", "<C-w>l") -- move to right window
+vim.keymap.set("n", "<C-s>", "<C-w>j") -- move to lower window
+vim.keymap.set("n", "<C-w>", "<C-w>k") -- move to upper window
 
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])   -- yank to clipboard
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]]) -- yank to clipboard
 
 -- LSP
 vim.keymap.set("n", "gd", vim.lsp.buf.definition)

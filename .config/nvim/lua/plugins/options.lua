@@ -1,6 +1,7 @@
 vim.g.ayucolor = "dark"
 -- vim.cmd.colorscheme("ayu") -- set color theme (ayu-theme/ayu-vim)
-vim.cmd.colorscheme("ayu-dark") -- set color theme (shatur/neovim-ayu)
+-- vim.cmd.colorscheme("ayu-dark") -- set color theme (shatur/neovim-ayu)
+vim.cmd.colorscheme("cendre")
 
 require("bufferline").setup({}) -- bufferline
 require("nvim-autopairs").setup({}) -- autopairs
@@ -8,12 +9,21 @@ require("gitsigns").setup({}) -- gitsigns
 
 require("nvim_comment").setup({ create_mappings = false }) --comment
 
+-- dashboard
+local header_path = "/lua/plugins/test.txt"
+require("dashboard").setup({
+	config = {
+		header = vim.fn.readfile(vim.fn.stdpath("config") .. header_path),
+	},
+})
+-- https://emojicombos.com/dot-art-generator
+
 -- terminal
 require("toggleterm").setup({
-    direction = "float",
-    float_opts = {
-        border = "curved",
-    }
+	direction = "float",
+	float_opts = {
+		border = "curved",
+	},
 })
 
 -- lua line
@@ -28,6 +38,9 @@ require("lualine").setup({
 		lualine_z = { "location" },
 	},
 })
+
+-- tree
+require("nvim-tree").setup({})
 
 -- blink.cmp
 require("blink.cmp").setup({
