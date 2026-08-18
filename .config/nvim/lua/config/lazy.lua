@@ -12,10 +12,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	-- { "ayu-theme/ayu-vim" },
-	-- { "shatur/neovim-ayu" },
-	{ "nvimdev/dashboard-nvim", event = "VimEnter", lazy = false, dependencies = "nvim-tree/nvim-web-devicons" },
-	{ "aejkatappaja/cendre" },
+    -- Themes
+    { "kungfusheep/mfd.nvim", lazy = false },
+    { "thesimonho/kanagawa-paper.nvim" },
+	-- { "nyoom-engineering/oxocarbon.nvim" },
+    { "nvimdev/dashboard-nvim", event = "VimEnter", dependencies = "nvim-tree/nvim-web-devicons" },
+
+    -- Features
 	{ "nvim-telescope/telescope.nvim", version = "*", dependencies = { "nvim-lua/plenary.nvim" } },
 	{ "nvim-tree/nvim-tree.lua", version = "*", dependencies = { "nvim-tree/nvim-web-devicons" } },
 	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
@@ -23,12 +26,13 @@ require("lazy").setup({
 	{ "akinsho/toggleterm.nvim", version = "*" },
 	{ "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
 	{ "lewis6991/gitsigns.nvim" },
-	{ "folke/which-key.nvim", event = "VeryLazy", opts = {} },
-	{ "neovim/nvim-lspconfig" }, -- Neovim LSP API
-	{ "mason-org/mason.nvim" }, -- LSP installer, etc.
-	{ "mason-org/mason-lspconfig.nvim" }, -- Neovim-Mason bridge
+
+	-- LSP & Fromatting
+	{ "neovim/nvim-lspconfig" },
+	{ "mason-org/mason.nvim" }, 
+	{ "mason-org/mason-lspconfig.nvim" },
 	{ "saghen/blink.cmp", version = "1.*", dependencies = "rafamadriz/friendly-snippets" },
-	{ "stevearc/conform.nvim" }, -- Formatting
-	{ "windwp/nvim-autopairs", event = "InsertEnter" }, -- (){}[]
-	{ "nvim-treesitter/nvim-treesitter", lazy = false, build = ":TSUpdate" }, -- Better parsing and syntaxing
+	{ "stevearc/conform.nvim" },
+	{ "windwp/nvim-autopairs", event = "InsertEnter" },
+	{ "nvim-treesitter/nvim-treesitter", lazy = false, build = ":TSUpdate" },
 })

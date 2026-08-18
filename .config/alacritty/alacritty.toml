@@ -1,8 +1,9 @@
 [general]
 import = [
-    #"~/.config/alacritty/themes/jellybeans.toml"
+    "~/.config/alacritty/themes/jellybeans.toml"
     #"~/.config/alacritty/themes/ayu-dark.toml"
-    "~/.config/alacritty/themes/srcery.toml"
+    # "~/.config/alacritty/themes/srcery.toml"
+    # "~/.config/alacritty/themes/usgc-reticle.toml"
     #"~/.config/alacritty/themes/noctis-default.toml"
     #"~/.config/alacritty/themes/noctis-minimus.toml"
 ]

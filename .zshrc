@@ -12,6 +12,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 alias v="nvim"
+alias machine="~/.local/bin/machine_report.sh"
 
 # Node version manager + NodeJs
 export NVM_DIR="$HOME/.nvm"
