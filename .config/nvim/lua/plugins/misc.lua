@@ -1,5 +1,3 @@
-
-
 require("bufferline").setup({}) -- bufferline
 require("nvim-autopairs").setup({}) -- autopairs
 require("gitsigns").setup({}) -- gitsigns
@@ -18,7 +16,8 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- terminal
 require("toggleterm").setup({
-	direction = "float",
+	size = 20,
+	direction = "horizontal",
 	float_opts = {
 		border = "curved",
 	},
@@ -37,3 +36,7 @@ require("lualine").setup({
 	},
 })
 
+-- session
+require("persistence").setup({
+	dir = vim.fn.stdpath("state") .. "/sessions/",
+})

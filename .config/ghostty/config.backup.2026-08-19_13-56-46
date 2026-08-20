@@ -1,0 +1,14 @@
+# theme = "jellybeans-default" 
+theme = "mfd-hud"
+maximize = true
+font-family = "Mononoki Nerd Font Mono"
+
+# keybinds
+keybind = ctrl+r=new_split:right
+keybind = ctrl+f=new_split:down
+
+# window movements
+keybind = ctrl+shift+w=goto_split:top
+keybind = ctrl+shift+a=goto_split:left
+keybind = ctrl+shift+s=goto_split:down
+keybind = ctrl+shift+d=goto_split:right
